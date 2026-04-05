@@ -1,8 +1,6 @@
 # AI-and-ML
 This repository will contain the hands-on project works I have done for the coursework: Artificial Intelligence and Machine Learning. 
 
-Below is the objective Context on the projects:
-
 ## Hackathons:
 1) Risk Classification using LLMs
    This project focuses on building a risk classification system using prompt engineering with a pre-trained Large Language Model (LLM). The objective is to classify risk events i     into two categories: Cybersecurity (0) and Financial (1) based on textual data.
@@ -17,6 +15,8 @@ Below is the objective Context on the projects:
 
 
 ------------------------------------------------------
+## Capstone Projects:
+Below is the objective Context on the projects.
 
 ## 1) FoodHub :
 The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company improve its business.
