@@ -41,4 +41,12 @@ By accurately detecting failures:
    c) False Positives are controlled to reduce unnecessary inspections
    
 Multiple classification models are trained, tuned, and evaluated to find the most cost-efficient solution for real-world deployment.
+
+## 5) SafeGaurd Corp - CCN:
+A deep learning image classification project built for SafeGuard Corp to automatically detect whether workers are wearing safety helmets in workplace images.
+Trained and compared four models on 4,125 images (200×200 RGB) to classify workers as **With Helmet** or **Without Helmet**, with a focus on minimising false negatives given the safety-critical nature of the task.
+   a) Stratified 70/15/15 train-val-test split preserving the 3.3:1 class imbalance ratio
+   b) Data augmentation (rotation, flip, zoom, shift) to simulate real CCTV conditions
+   c) Evaluation prioritised **Recall for the Without Helmet class** over accuracy
+   d) EarlyStopping used across all models to prevent overfitting
  
