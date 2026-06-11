@@ -1,0 +1,9 @@
+Predicted_Sales,Product_Allocated_Area,Product_MRP,Product_Sugar_Content,Product_Type,Product_Weight,Store_Age,Store_Location_City_Type,Store_Size,Store_Type
+3389.27,0.065,150.0,Low Sugar,Snack Foods,12.5,14,Tier 2,Medium,Supermarket Type2
+4504.07,0.031,200.0,Regular,Dairy,16.0,26,Tier 1,High,Supermarket Type1
+1529.05,0.096,85.0,No Sugar,Fruits and Vegetables,9.5,4,Tier 3,Small,Food Mart
+4078.45,0.112,175.0,Low Sugar,Frozen Foods,14.2,14,Tier 2,Medium,Supermarket Type2
+2535.75,0.056,120.0,Regular,Baking Goods,11.8,26,Tier 2,High,Supermarket Type1
+1656.68,0.028,95.0,No Sugar,Health and Hygiene,8.3,4,Tier 3,Small,Food Mart
+4839.49,0.144,230.0,Low Sugar,Household,13.6,15,Tier 2,Medium,Departmental Store
+3986.98,0.071,110.0,Regular,Canned,10.1,26,Tier 1,High,Supermarket Type1
