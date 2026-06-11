@@ -49,4 +49,21 @@ Trained and compared four models on 4,125 images (200×200 RGB) to classify work
    b) Data augmentation (rotation, flip, zoom, shift) to simulate real CCTV conditions
    c) Evaluation prioritised **Recall for the Without Helmet class** over accuracy
    d) EarlyStopping used across all models to prevent overfitting
+
+## 6) SuperKart — Sales Revenue Forecasting & Deployment:
+An end-to-end machine learning project built for SuperKart, a retail chain 
+operating across Tier 1, 2, and 3 cities, to forecast product-level sales 
+revenue and deploy the solution for real-time use.
+Using historical product and store data, the model is designed to:
+   a) Accurately predict total sales revenue per product per store
+   b) Support inventory management and regional sales strategy decisions
+   c) Deliver forecasts via a live REST API and interactive web application
+
+Multiple ensemble models (Random Forest, Gradient Boosting) were trained, 
+tuned, and evaluated inside sklearn pipelines. The best model (Tuned Gradient 
+Boosting, RMSE: 281.54, R²: 0.93) was serialized and deployed on Hugging Face 
+Spaces using Flask (backend) and Streamlit (frontend), containerized via Docker.
+
+- **Live App:** https://manasa92-superkart-frontend.hf.space
+- **Backend API:** https://manasa92-superkart-backend.hf.space
  
