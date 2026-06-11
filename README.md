@@ -66,4 +66,7 @@ Spaces using Flask (backend) and Streamlit (frontend), containerized via Docker.
 
 - **Live App:** https://manasa92-superkart-frontend.hf.space
 - **Backend API:** https://manasa92-superkart-backend.hf.space
- 
+
+## 7) [New Wheels SQL Analysis](./New_Wheels_SQL_Analysis) :
+Business analysis of vehicle resale company using 
+SQL — window functions, aggregations, QoQ revenue analysis, customer feedback trends using SQLite
