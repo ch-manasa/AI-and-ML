@@ -70,3 +70,7 @@ Spaces using Flask (backend) and Streamlit (frontend), containerized via Docker.
 ## 7) [New Wheels SQL Analysis](./New_Wheels_SQL_Analysis) :
 Business analysis of vehicle resale company using 
 SQL — window functions, aggregations, QoQ revenue analysis, customer feedback trends using SQLite
+
+## 8) Visit with Us – Wellness Tourism Package Prediction
+
+An end-to-end MLOps project that predicts whether a customer is likely to purchase the Wellness Tourism Package before being contacted. The project includes automated data validation, preprocessing, feature engineering, model training with hyperparameter tuning using XGBoost, MLflow experiment tracking, GitHub Actions-based CI/CD automation, and deployment of the trained model as an interactive Streamlit web application for real-time predictions.
