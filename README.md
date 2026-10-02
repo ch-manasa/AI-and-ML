@@ -74,3 +74,35 @@ SQL — window functions, aggregations, QoQ revenue analysis, customer feedback 
 ## 8) Visit with Us – Wellness Tourism Package Prediction
 
 An end-to-end MLOps project that predicts whether a customer is likely to purchase the Wellness Tourism Package before being contacted. The project includes automated data validation, preprocessing, feature engineering, model training with hyperparameter tuning using XGBoost, MLflow experiment tracking, GitHub Actions-based CI/CD automation, and deployment of the trained model as an interactive Streamlit web application for real-time predictions.
+
+
+## 9) Flykite Airlines HR Policy Q&A Bot (LLM + RAG)
+
+Capstone project for the AI & ML program. A prototype that answers employee HR policy questions from the Flykite Airlines HR handbook using an open-source LLM and Retrieval-Augmented Generation (RAG).
+
+## Approach
+1. **Baseline LLM:** Qwen2.5-7B-Instruct (4-bit) with no access to the handbook.
+2. **Prompt engineering:** 5 system-prompt strategies, with two refined further.
+3. **RAG:** handbook cleaned, chunked (1000/150), embedded with all-MiniLM-L6-v2, stored in ChromaDB, retrieved with similarity search (k=3).
+4. **Hyperparameter tuning:** 7 configurations (chunk size, k, similarity vs MMR, temperature) plus a page-merged chunking experiment.
+
+## Evaluation
+- LLM judge for relevance and groundedness (1 to 5)
+- Manual review against handbook reference answers
+- Key-fact recall: share of expected policy facts present in each answer
+
+## Results
+| Method | Relevance | Groundedness |
+|---|---|---|
+| Base LLM | 4.2 | 3.2 |
+| Prompt-engineered (P2 v3) | 4.2 | 3.4 |
+| RAG (manual review) | 4.4 | 4.8 |
+| RAG tuned (cfg1, judge) | 5.0 | 5.0 |
+
+The selected configuration (1000/150, k=3, similarity) had the highest key-fact recall (0.91). The main remaining risk is page-based chunking splitting multi-part rules; section-based chunking is the recommended next step.
+
+## Tech stack
+Python, Hugging Face Transformers, bitsandbytes, LangChain, ChromaDB, sentence-transformers, Google Colab (T4 GPU)
+
+## Running the notebook
+Open in Google Colab with a T4 GPU runtime. Run the install cell, restart the session, then run all cells. The HR handbook PDF is not included in this repo; update `pdf_path` to point to your own copy.
